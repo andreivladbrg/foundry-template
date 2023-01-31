@@ -25,13 +25,13 @@ jobs:
       - name: Install dependencies
         run: forge install
 
-      - name: Run tests
-        run: forge test
-
       - name: Build the contracts
         run: |
           forge --version
           forge build --sizes
+
+      - name: Run tests
+        run: forge test
 
       - name: Add test summary
         run: |
