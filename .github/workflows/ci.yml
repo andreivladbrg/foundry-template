@@ -15,15 +15,14 @@ jobs:
   run-ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: "actions/checkout@v3"
+        with:
+          submodules: "recursive"
 
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
-
-      - name: Install dependencies
-        run: forge install
 
       - name: Build the contracts
         run: |
