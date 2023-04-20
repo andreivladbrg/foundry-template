@@ -1,2 +1,10 @@
 # directories
+/broadcast
+/cache
 /lib
+/node_modules
+/out
+
+# files
+.env
+yarn.lock

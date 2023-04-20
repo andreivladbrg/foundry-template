@@ -1,6 +1,10 @@
 {
-  "solidity.packageDefaultDependenciesContractsDirectory": "src",
-  "solidity.packageDefaultDependenciesDirectory": "lib",
-  "solidity.compileUsingRemoteVersion": "v0.8.17",
-  "search.exclude": { "lib": true }
+  "[solidity]": {
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "files.associations": {
+    ".gas-snapshot": "julia"
+  },
+  "editor.formatOnSave": true,
+  "solidity.formatter": "forge"
 }
