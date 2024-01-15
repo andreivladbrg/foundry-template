@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity >=0.8.23;
 
-import { Test } from "forge-std/Test.sol";
+import { Test } from "forge-std/src/Test.sol";
 
 import { Contract } from "src/Contract.sol";
 
@@ -12,11 +12,11 @@ contract TestContract is Test {
         c = new Contract();
     }
 
-    function testFoo() public {
+    function test_Foo() public {
         assertEq(c.foo(1), 1);
     }
 
-    function testFooFuzz(uint256 a) public {
+    function testFuzz_Foo(uint256 a) public {
         vm.assume(a < type(uint256).max);
         assertEq(c.foo(a), a);
     }

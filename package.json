@@ -1,29 +1,14 @@
 {
-  "name": "foundry-template",
-  "description": "Ethereum smart contracts template with foundry",
-  "version": "1.0.0",
-  "author": {
-    "name": "Andrei Vlad Birgaoanu",
-    "url": "https://github.com/andreivladbrg"
-  },
   "devDependencies": {
+    "ds-test": "github:dapphub/ds-test#e282159d5170298eb2455a6c05280ab5a73a4ef0",
+    "forge-std": "github:foundry-rs/forge-std#v1.7.5",
     "prettier": "^2.8.7",
     "solhint": "^3.4.1"
   },
-  "keywords": [
-    "blockchain",
-    "ethereum",
-    "forge",
-    "foundry",
-    "smart-contracts",
-    "solidity",
-    "template"
-  ],
   "scripts": {
-    "clean": "rm -rf cache out",
-    "lint": "yarn lint:sol && yarn prettier:check",
-    "lint:sol": "solhint \"{src,test}/**/*.sol\"",
-    "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
-    "prettier:write": "prettier --write \"**/*.{json,md,yml}\""
+    "lint": "bun run lint:sol && bun run prettier:check",
+    "lint:sol": "forge fmt --check && bun solhint {script,src,test}/**/*.sol",
+    "prettier:check": "prettier --check **/*.{json,md,yml} --ignore-path=.prettierignore",
+    "prettier:write": "prettier --write **/*.{json,md,yml} --ignore-path=.prettierignore"
   }
 }

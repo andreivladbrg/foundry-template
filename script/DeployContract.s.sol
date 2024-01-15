@@ -1,14 +1,12 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity >=0.8.23;
 
-import { Script } from "forge-std/Script.sol";
+import { Contract } from "../src/Contract.sol";
 
-import { Contract } from "src/Contract.sol";
+import { BaseScript } from "./Base.s.sol";
 
-contract DeployContract is Script {
-    function run() public returns (Contract c) {
-        vm.startBroadcast();
+contract DeployContract is BaseScript {
+    function run() public broadcast returns (Contract c) {
         c = new Contract();
-        vm.stopBroadcast();
     }
 }

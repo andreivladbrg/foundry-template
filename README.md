@@ -1,23 +1,24 @@
-# Foundry Template [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry] [![License: MIT][license-badge]][license]
+# Foundry Template [![Github Actions][gha-badge]][gha] [![Foundry][foundry-badge]][foundry]
 
 [gha]: https://github.com/andreivladbrg/foundry-template/actions
 [gha-badge]: https://github.com/andreivladbrg/foundry-template/actions/workflows/ci.yml/badge.svg
 [foundry]: https://getfoundry.sh/
 [foundry-badge]: https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg
-[license]: https://opensource.org/licenses/MIT
-[license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
+[license]: http://unlicense.org/
 
-Ethereum smart contracts template with foundry.
+Ethereum smart contracts template with [Foundry](https://github.com/foundry-rs/foundry).
 
-It requires [Foundry](https://github.com/foundry-rs/foundry) installed to run. You can find instructions here [Foundry installation](https://book.getfoundry.sh/getting-started/installation).
+It requires [Foundry](https://book.getfoundry.sh/getting-started/installation) and
+[Bun](https://bun.sh/docs/installation) installed to run.
+
+Inspired from [here](https://github.com/paulrberg/foundry-template).
 
 ## Getting started
 
 ```
 git clone https://github.com/andreivladbrg/foundry-template.git
 cd foundry-template
-forge install
-yarn install
+bun install
 ```
 
 ## Commands
@@ -26,4 +27,3 @@ yarn install
 - `forge clean` - remove compiled files
 - `forge test` - run tests
 - `forge test -vvv` - run tests and display failing tests
-- `forge test --gas-report` - run tests and show gas report
