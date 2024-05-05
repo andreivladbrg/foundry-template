@@ -12,11 +12,11 @@ contract TestContract is Test {
         c = new Contract();
     }
 
-    function test_Foo() public {
+    function test_Foo() public view {
         assertEq(c.foo(1), 1);
     }
 
-    function testFuzz_Foo(uint256 a) public {
+    function testFuzz_Foo(uint256 a) public view {
         vm.assume(a < type(uint256).max);
         assertEq(c.foo(a), a);
     }
