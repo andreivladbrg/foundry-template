@@ -14,7 +14,6 @@
   solc = "0.8.26"
   src = "src"
   test = "test"
-libs = ["node_modules", "lib"]
 
 [fmt]
   bracket_spacing = true
