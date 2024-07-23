@@ -2,7 +2,7 @@
 
 [profile.default]
   auto_detect_solc = false
-  block_timestamp = 1_704_067_200 # January 1, 2024 at 00:00 GMT
+  block_timestamp = 1_719_792_000 # July 1, 2024 at 00:00 UTC
   bytecode_hash = "none"
   evm_version = "shanghai"
   fuzz = { runs = 1_000 }
