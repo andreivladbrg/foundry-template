@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "forge-std": "github:foundry-rs/forge-std#v1.8.1",
-    "prettier": "^2.8.7",
-    "solhint": "^3.4.1"
+    "forge-std": "github:foundry-rs/forge-std#v1.8.2",
+    "prettier": "^3.5.2",
+    "solhint": "^5.0.5"
   },
   "scripts": {
     "lint": "bun run lint:sol && bun run prettier:check",
