@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "devDependencies": {
-        "forge-std": "github:foundry-rs/forge-std#v1.14.0",
+        "forge-std": "github:foundry-rs/forge-std#v1.16.1",
         "prettier": "3.6.2",
         "solhint": "6.0.1",
       },
@@ -89,7 +89,7 @@
 
     "fast-uri": ["fast-uri@3.0.6", "", {}, "sha512-Atfo14OibSv5wAp4VWNsFYE1AchQRTv9cBGWET4pZWHzYshFSS9NQI6I57rdKn9croWVMbYFbLhJ+yJvmZIIHw=="],
 
-    "forge-std": ["forge-std@github:foundry-rs/forge-std#1801b05", {}, "foundry-rs-forge-std-1801b05", "sha512-ZaiFeL3L8I/nDvf+2wpp6UDOkPdL5+4W8/XhjIY6WY7nMxY6Klr8BsPj8OpSnFCPnaFUzyUS4DvwIbrOFI2J3A=="],
+    "forge-std": ["forge-std@github:foundry-rs/forge-std#620536f", {}, "foundry-rs-forge-std-620536f", "sha512-0VTNbQ449YtrfLjQW0/T01S/OnPHXO/CLgMZM7bGKnwMPyRfTyAKkSoDjXc2wfGSiRaBONE/0DCIiJe8KWGc6Q=="],
 
     "form-data-encoder": ["form-data-encoder@2.1.4", "", {}, "sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw=="],
 

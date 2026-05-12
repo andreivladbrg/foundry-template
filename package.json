@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "forge-std": "github:foundry-rs/forge-std#v1.14.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.16.1",
     "prettier": "3.6.2",
     "solhint": "6.0.1"
   },
